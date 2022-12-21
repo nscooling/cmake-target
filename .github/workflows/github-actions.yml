@@ -14,9 +14,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          submodules: recursive
+        uses: actions/checkout@v3
 
       - name: arm-none-eabi-gcc
         uses: ryanwinter/arm-none-eabi-gcc@master
